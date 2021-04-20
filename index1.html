@@ -1,0 +1,60 @@
+<html lang="en"><head>
+	<title>ABC COOP</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+	<header><center>
+	<h1>ABC COOPERATIVE</h1>
+	</center>
+	<div class="topnav">
+
+		<a class="active" href="#home">HOME</a>
+		<a href="#about">ABOUT</a>
+		<a href="#services">SERVICES</a>
+		<a href="#contact">CONTACT</a>
+	</div>
+
+	<hr width="1500" size="4" color="#ffffff">
+	</header>
+	<h2>COSTUMERS FORM</h2>
+	<form method ="POST" action="test_form.php"  >	
+
+	<label for="name">Costumer Name:</label>
+ 	<select style=" bordercolor: #b3b300; background-color: rgb(240, 240, 240);" name="name" type="text" value="">
+	<option> Juan Dela Cruz</option>
+	<option> Pedro Dela Cruz</option>
+	<option> Paul Dela Paz</option>
+	</select><br><br>
+ 	<label for="transaction">Type of Transaction:</label>
+	<select style="background-color:rgb(240, 240, 240);" name="transaction" >
+	<option>Save</option>
+	<option>Loan</option>
+	</select><br><br>
+ 	<label for="amount">Amount:</label>
+	
+ 	<input type="numbers" value="" size="5" name="amount"><br><br>
+
+	<p id="demo">Please Submit.</p>
+	
+	<button type="button" onclick="myFunction()">Submit</button>
+
+	
+
+	<script>
+	function myFunction() { 
+  	document.getElementById("demo").innerHTML = "YOU SUBMITTED!";
+	document.getElementById("demo").style.fontSize = "20px"; 
+  
+	}
+	</script>
+	
+	</form>
+	
+	
+
+	<hr width="1500" size="4" color="#ffffff">
+	
+	
+
+</body></html>
